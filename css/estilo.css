@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  outline: none;
+  border: none; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+
+main {
+  flex: 1;
+  background-color: #f1f1f1;
+  padding-top: 60px;
+  padding-bottom: 100px; }
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #cef0ee;
+  font-family: "Raleway", sans-serif;
+  color: #606060;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1em 5em 2em 3em; }
+  footer .redes {
+    text-align: right; }
+    footer .redes p {
+      margin-bottom: 0.5vh; }
+    footer .redes a {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      gap: 2em; }
+
+.email {
+  visibility: hidden;
+  margin-left: -1rem; }
+
+.carousel-item {
+  font-family: "Raleway", sans-serif; }
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial; }
+  .carousel-caption h1 {
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    font-size: 4em; }
+
+.navbar-light {
+  background-color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px #bebcbc; }
+
+.titulo h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: #fca6ec;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  padding: 2.3em; }
+
+.imagenesProductos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.tarjetas {
+  flex: 20%;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  border-radius: 0.3em;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -10px black;
+  transition: 300ms ease-in-out; }
+  .tarjetas:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px -10px black; }
+  .tarjetas img {
+    width: 100%; }
+  .tarjetasTexto {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    gap: 0.5em;
+    padding: 1em;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: #606060;
+    font-size: 2rem; }
+    .tarjetasTexto p {
+      font-size: 1rem;
+      text-align: center;
+      font-family: "Raleway", sans-serif; }
+    .tarjetasTexto .botonReservar {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      font-family: "Raleway", sans-serif;
+      background-color: #fca6ec;
+      color: #606060;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 0.1em 0.3em; }
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .hvr-rectangle-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f3ddef;
+    border-radius: 10px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+    color: white; }
+  .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+.heroProductos, .heroNosotras, .heroPreguntas, .heroContacto {
+  background-image: url("../imagenes/img13.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 550px;
+  display: grid;
+  place-content: center; }
+
+.heroNosotras {
+  background-image: url("../imagenes/img32.jpg"); }
+
+.heroPreguntas {
+  background-image: url("../imagenes/img33.jpg"); }
+
+.heroContacto {
+  background-image: url("../imagenes/img34.jpg"); }
+
+.textoHero {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  font-size: 4em; }
+
+.contenidoNosotras {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px; }
+
+.imgNosotras {
+  display: flex; }
+
+.parrafoNosotras {
+  flex: 1;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #fca6ec;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+.preguntas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+.estiloPreguntas {
+  font-family: "Raleway", sans-serif;
+  color: #606060;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 30px; }
+  .estiloPreguntas h3 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2rem; }
+
+.estiloFormulario {
+  font-family: "Raleway", sans-serif;
+  color: #606060;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 500px;
+  margin: 0 auto; }
+  .estiloFormulariolabel {
+    margin-bottom: 0.5em;
+    font-weight: bold; }
+  .estiloFormularioselect, .estiloFormularioinput, .estiloFormulariotextarea {
+    margin-bottom: 0.8em;
+    border-radius: 5px;
+    padding-left: 8px; }
+
+.hvr-border-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0); }
+  .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+    box-shadow: inset 0 0 0 4px #cef0ee, 0 0 1px rgba(0, 0, 0, 0); }
+
+.botonCheck {
+  width: 20px;
+  height: 20px; }
+
+.botones {
+  display: inline-block;
+  border-radius: 0.3em;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 0.10em;
+  margin-left: 0.3em;
+  background-color: silver;
+  color: white;
+  transition: 1s; }
+  .botones:hover {
+    background-color: black; }
+
+.seguinos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+
+.iconify {
+  color: black;
+  width: 30px;
+  height: 30px; }
+
+#email {
+  width: 18rem; }
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+    justify-items: center;
+    align-items: center; }
+  footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    footer.redes {
+      display: flex;
+      justify-content: center; } }
+
+@media only screen and (min-width: 600px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 30%; }
+  .tarjetas {
+    gap: 10px; } }
