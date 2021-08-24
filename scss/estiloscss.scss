@@ -55,7 +55,7 @@ footer {
 
 .email {
     visibility: hidden;
-    margin-left: -1rem;
+    margin-left: -3.5rem;
 }
 
 .carousel-item { 
@@ -101,6 +101,8 @@ footer {
 
 .tarjetas {
     flex: 20%;
+    width: 80%;
+    margin: 0 auto;
     padding: 10px; 
     display: flex;
     flex-flow: column;
@@ -141,7 +143,7 @@ footer {
                     color: $colorLetraPrincipales;
                     text-decoration: none;
                     border-radius: 10px;
-                    padding: 0.1em 0.3em;
+                    padding: 0.3em 0.5em;
                 } 
         }
 }
@@ -227,7 +229,9 @@ footer {
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 30px; 
+    padding: 20px; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .imgNosotras {
@@ -240,7 +244,7 @@ footer {
     font-family: $letraSecundaria;
     text-align: center;
     color: $colorLetraTitulos;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -256,11 +260,14 @@ footer {
     color: $colorLetraPrincipales;
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: 30px;
+    background-color: white;
+    width: 80%;
+    padding: 1em 2em;
+    margin-bottom: 30px;
         h3 {
             margin: 10px;
             font-weight: bold; 
-            font-size: 2rem;
+            font-size: 1.7rem;
         }
 }
 
@@ -274,14 +281,14 @@ footer {
     flex-flow: column nowrap;
     max-width: 500px;   
     margin: 0 auto;
-        &label {
-            margin-bottom: 0.5em;
+        label {
+            margin-top: 1em;
             font-weight: bold;
         }
-        &select,&input,&textarea {
+        select,input,textarea {
             margin-bottom: 0.8em;
             border-radius: 5px;
-            padding-left: 8px;
+            padding: .3em .5em;
         }
 }
 
@@ -312,6 +319,7 @@ footer {
     font-family: $letraPrincipal;
     letter-spacing: 0.10em;
     margin-left: 0.3em;
+    padding: .2em 1em;
     background-color: silver;
     color: white;
     transition: 1s;
